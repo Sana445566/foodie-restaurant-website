@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Menu</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" >
+   <link rel="stylesheet" href="Menu.css">   
+</head>
+
+<body>
+
+    <header>
+<!--navber-->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" style="height: 60px;background-color: rgb(37, 37, 37);">
+    <a class="navbar-brand" href="#" style="color: aliceblue;margin-left: 5%;">
+        <i class="fa-solid fa-pizza-slice" style="color: antiquewhite"></i>
+        Foodie</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav" style="margin-left: 69%;">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html" style="color: aliceblue;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Menu.html" style="color: aliceblue;">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html" style="color: aliceblue;">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="contact.html" style="color: aliceblue;">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" style="color: aliceblue;">
+            <i class="fa-solid fa-cart-shopping"></i>
+Cart <span id="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>    
+</header> 
+
+<main>
+<!-- Menu Hero -->
+
+<section class="menu-hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Left Side -->
+
+            <div class="col-md-6">
+
+                <h1>Our Menu</h1>
+
+                <h3>Delicious Food Made Fresh For You</h3>
+
+                <p>
+                    Explore our delicious selection of burgers,
+                    pizzas, pasta and refreshing drinks.
+                </p>
+
+                <a href="#menu-foods" class="btn btn-warning">
+                    Explore Menu
+                </a>
+
+            </div>
+
+
+            <!-- Right Side -->
+
+            <div class="col-md-6 text-center">
+
+                <img src="card1.avif"
+                     alt="Delicious Food"
+                     class="menu-hero-img">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Menu Categories -->
+
+<section class="menu-categories py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-4">
+
+            <h2>Explore Our Menu</h2>
+
+            <p>Choose your favorite category</p>
+
+        </div>
+
+
+
+
+        <div class="text-center">
+
+<button class="category-btn active" data-filter="all">
+    All
+</button>
+
+<button class="category-btn" data-filter="burgers">
+    Burgers
+</button>
+
+<button class="category-btn" data-filter="pizza">
+    Pizza
+</button>
+
+<button class="category-btn" data-filter="pasta">
+    Pasta
+</button>
+
+<button class="category-btn" data-filter="drinks">
+    Drinks
+</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Food Cards -->
+
+<section class="menu-foods py-5" id="menu-foods">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Classic Burger -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="burgers">
+
+                    <img src="card1.avif" alt="Classic Burger">
+
+                    <div class="card-content">
+
+                        <h5>Classic Burger</h5>
+
+                        <p>Juicy beef burger with fresh vegetables.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$8.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cheese Pizza -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="pizza">
+
+                    <img src="card2.avif" alt="Cheese Pizza">
+
+                    <div class="card-content">
+
+                        <h5>Cheese Pizza</h5>
+
+                        <p>Fresh pizza topped with delicious cheese.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$10.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Creamy Pasta -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="pasta">
+
+                    <img src="card3.avif" alt="Creamy Pasta">
+
+                    <div class="card-content">
+
+                        <h5>Creamy Pasta</h5>
+
+                        <p>Creamy pasta prepared with fresh ingredients.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$9.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Fresh Drink -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="drinks">
+
+                    <img src="card4.avif" alt="Fresh Drink">
+
+                    <div class="card-content">
+
+                        <h5>Fresh Drink</h5>
+
+                        <p>Refreshing and delicious cold drink.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$4.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Chicken Burger -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="burgers">
+
+                    <img src="card5.avif" alt="Chicken Burger">
+
+                    <div class="card-content">
+
+                        <h5>Chicken Burger</h5>
+
+                        <p>Grilled chicken burger with fresh salad.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$9.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pepperoni Pizza -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="pizza">
+
+                    <img src="buger2.avif" alt="Pepperoni Pizza">
+
+                    <div class="card-content">
+
+                        <h5>Pepperoni Pizza</h5>
+
+                        <p>Delicious pizza with cheese and pepperoni.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$12.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Alfredo Pasta -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="pasta">
+
+                    <img src="card7.avif" alt="Alfredo Pasta">
+
+                    <div class="card-content">
+
+                        <h5>Alfredo Pasta</h5>
+
+                        <p>Creamy Alfredo pasta with delicious sauce.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$11.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Fresh Juice -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="food-card" data-category="drinks">
+
+                    <img src="juise.avif" alt="Fresh Juice">
+
+                    <div class="card-content">
+
+                        <h5>Fresh Juice</h5>
+
+                        <p>Fresh and refreshing fruit juice.</p>
+
+                        <div class="card-bottom">
+
+                            <strong>$5.99</strong>
+
+                            <button class="btn btn-warning add-cart-btn">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Special Offer -->
+
+<section class="special-offer">
+
+    <div class="container">
+
+        <div class="offer-content">
+
+            <h2>🔥 Today's Special</h2>
+
+            <h3>Get 20% Off on Selected Meals</h3>
+
+            <p>
+                Enjoy our delicious meals at a special discounted price.
+            </p>
+
+            <button id="offer-order-btn" class="btn btn-warning">
+    Order Now
+</button>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <h4>Foodie</h4>
+
+                <p>
+                    Delicious food, fresh ingredients
+                    and great taste for everyone.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <h5>Quick Links</h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <h5>Contact Us</h5>
+
+                <p>📍 Pakistan</p>
+
+                <p>📞 +92 300 1234567</p>
+
+                <p>✉️ foodie@example.com</p>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 Foodie. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Menu.js"></script>
+</body>
+
+</html>
